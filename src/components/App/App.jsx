@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import Home from 'components/Home/Home.jsx';
+import Episodes from 'components/Episodes/Episodes.jsx';
 
-// import Characters from '../Characters/Characters';
+
 
 
 function App() {
