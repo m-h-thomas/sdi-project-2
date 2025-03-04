@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const CharacterPix = ({ image, name, gender }) => (
   <div className="character-card">
@@ -31,5 +31,5 @@ const CharacterShots = () => {
   );
 };
 
-export default CharacterShots;
+export default CharacterShots
 

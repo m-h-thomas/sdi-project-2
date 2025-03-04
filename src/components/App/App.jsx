@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Home from '../Home/Home.jsx';
 import Episodes from '../Episodes/Episodes.jsx'
-
+import CharacterShots from '../Characters/Characters.jsx';
 
 
 
@@ -21,6 +21,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
+            <Route path="/characters" element={<CharacterShots/>} />
         </Routes>
         <button onClick={() => {navigate('/')}}>Home</button>
         <button onClick={() => {navigate('/episodes')}}>Episodes</button>
