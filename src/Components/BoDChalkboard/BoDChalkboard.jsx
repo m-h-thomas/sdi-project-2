@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './BoDChalkboard.css';
-import burgerButton from './burger-button.png';  // Import burger icon
+import burgerButton from './images/burger-button.png';  // Import burger icon
 
 const BoDChalkboard = () => {
     const [burger, setBurger] = useState(null);

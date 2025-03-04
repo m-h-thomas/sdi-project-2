@@ -23,7 +23,7 @@
     position: relative;
     
     /* Chalkboard texture background */
-    background-image: url('./chalkboard-texture.png');
+    background-image: url('./images/chalkboard-texture.png');
     background-size: cover;    /* Ensure it covers the entire area */
     background-repeat: no-repeat;
     background-position: center;
