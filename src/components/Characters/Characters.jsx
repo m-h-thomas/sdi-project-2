@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './Characters.css';
 
 const CharacterPix = ({ image, name, gender }) => (
   <div className="character-card">
@@ -21,10 +22,12 @@ const CharacterShots = () => {
     <div className='head-shots'>
       {char.map(character => (
         <CharacterPix
+        
           key={character.id}
           image={character.image}
           name={character.name}
           gender={character.gender}
+        
         />
       ))}
     </div>

@@ -1,1 +1,19 @@
- 
+.head-shots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .character-card {
+    flex: 1 1 calc(20% - 10px); 
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+    text-align: center;
+  }
+  
+  .character-card img {
+    width: 200px;
+    height: 200px;
+  }
+  
