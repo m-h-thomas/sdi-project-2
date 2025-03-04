@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Home.css";
+import DisplayEpisode from "./MainEpisodeScreen";
 
 function Home(){
     return(
@@ -10,6 +11,12 @@ function Home(){
                 <Link to="/episodes" className="nav-link">Episodes</Link>
                 <Link to="/characters" className="nav-link">Characters</Link>
             </header>
+
+            <section className="latest-episode">
+                <h2>Latest Episode</h2>
+                <DisplayEpisode />  
+            </section>
+
 
             <footer>
                 <div className="imagecarousel">
