@@ -1,5 +1,5 @@
 import React from 'react';
-import BoDChalkboard from './Components/BoDChalkboard/BoDChalkboard';
+import BoDChalkboard from './Components/BoDChalkboard';
 
 function App() {
   return (
