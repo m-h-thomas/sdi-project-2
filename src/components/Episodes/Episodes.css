@@ -1,27 +1,12 @@
+@font-face {
+  font-family: 'Bob\'s Burgers';
+  src: url('/bobs-burgers.ttf');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-header {
-  position: fixed;
-  z-index: 3;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 14px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-  background-color: white;
-}
-@font-face {
-  font-family: 'Bob\'s Burgers';
-  src: url('https://www.fontsaddict.com/fontface/bobs-burgers.ttf');
 }
 
 .nav-link {
@@ -33,7 +18,9 @@ header {
 
 h1 {
   font-family: 'Bob\'s Burgers';
-
+  font-size: 64px;
+  padding-top: 80px;
+  text-align: center;
 }
 
 body {
@@ -93,8 +80,7 @@ footer {
   padding: 20px;
   list-style-type: none;
   margin: 0;
-  padding-top: 80px;
-  font-family: 'Bob\'s Burgers', sans-serif;
+  padding-top: 20px;
 }
 
 .episode-list li {
@@ -106,8 +92,26 @@ footer {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  font-size: 24px;
 }
 
 .episode-list li:hover {
   transform: scale(1.05);
+}
+
+
+.favorite-btn {
+  width: 50px; /* Set the width of the heart button */
+  height: 50px; /* Set the height of the heart button */
+  background-color: transparent; /* Remove background */
+  background-size: cover; /* Make sure the image covers the button */
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%; /* Optional: makes the button circular */
+  transition: transform 0.3s ease; /* Smooth animation for hover */
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }

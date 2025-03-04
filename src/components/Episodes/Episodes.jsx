@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Episodes.css";
+import NavBar from "../NavBar/NavBar";
+import FavoriteButton from "../Favorites/FavoriteButton"
 
 export default function Episodes () {
 
@@ -16,15 +18,19 @@ export default function Episodes () {
   return (
     <div>
       <header>
-          <img src="https://raw.githubusercontent.com/whburkle/bobs_burgers/main/img/bobs_burgers_logo.png" />
-          <Link to="/episodes" className="nav-link">Episodes</Link>
-          <Link to="/characters" className="nav-link">Characters</Link>
+        <NavBar />
       </header>
 
       <div>
+        <h1>Episode List</h1>
         <ul className="episode-list">
           {episodeList.map((episode) => (
-            <li key={episode.id}>Season: {episode.season}, Episode: {episode.episode} <div>{episode.name}</div></li>
+            <li key={episode.id}>
+              Season: {episode.season}, Episode: {episode.episode}
+              <div>{episode.name}</div>
+              <FavoriteButton />
+              <div><a href={episode.wikiUrl} target="_blank">Wiki</a></div>
+            </li>
           ))}
         </ul>
       </div>
