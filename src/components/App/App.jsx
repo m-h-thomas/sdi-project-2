@@ -26,8 +26,8 @@ function App() {
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/characters" element={<CharacterShots/>} />
         </Routes>
-        <button onClick={() => {navigate('/')}}>Home</button>
-        <button onClick={() => {navigate('/episodes')}}>Episodes</button>
+        {/* <button onClick={() => {navigate('/')}}>Home</button>
+        <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}
       </>
     )
   }
