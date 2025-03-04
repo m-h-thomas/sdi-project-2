@@ -11,3 +11,7 @@ This app is intended to serve as a one-stop shop for fans of the show Bob's Burg
 ## How To Use
 
 This app only runs locally and requires the user to fork and clone down the repository. Once cloned down, the user will need to install the npm packages to use the command ```npm install``` and then moving into the directory run the command ```npm run dev```.
+
+### Wire Frame concept (How the app developed)
+
+    ![Project 2 WireFrame](/sdi-project-2/public/images/wireFrame.png)
