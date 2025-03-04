@@ -14,4 +14,4 @@ This app only runs locally and requires the user to fork and clone down the repo
 
 ### Wire Frame concept
 
-    ![Project 2 WireFrame](./public/images/wireFrame.png)
+    ![Project 2 WireFrame](/images/wireFrame.png)
