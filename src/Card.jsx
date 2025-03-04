@@ -1,1 +1,1 @@
-console.log(test);
+const favoriteList =[];
