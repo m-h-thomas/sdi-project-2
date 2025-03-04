@@ -43,7 +43,7 @@ export default function Episodes() {
             <ul className="episode-list">
               {groupedBySeason[season].map((episode) => (
                 <li key={episode.id}>
-                  Season: {episode.season}, Episode: {episode.episode}
+                  Episode: {episode.episode}
                   <div>{episode.name}</div>
                   <FavoriteButton />
                   <div><a href={episode.wikiUrl} target="_blank">Wiki</a></div>
