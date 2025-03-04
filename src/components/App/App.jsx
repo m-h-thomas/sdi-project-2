@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Home from '../Home/Home.jsx';
 import Episodes from '../Episodes/Episodes.jsx'
-import BoDChalkboard from '../components/BoDChalkboard/BoDChalkboard'
 
 
 
