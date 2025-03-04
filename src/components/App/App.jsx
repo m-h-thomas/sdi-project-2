@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Home from '../Home/Home.jsx';
-
+import Episodes from '../Episodes/Episodes.jsx'
 
 
 
@@ -9,14 +9,11 @@ import Home from '../Home/Home.jsx';
 function App() {
     return(
       <div>
-        {/* <Router>
-          <InnerApp />
-        </Router> */}
-        <Home />
+        <InnerApp />
       </div>
     )
   }
-  
+
   function InnerApp() {
     const navigate = useNavigate();
     return (
