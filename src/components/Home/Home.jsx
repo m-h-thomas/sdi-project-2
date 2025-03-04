@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Home.css";
+import NavBar from "../NavBar/NavBar";
 
 function Home(){
     return(
         <div>
             <header>
-                <img src="https://raw.githubusercontent.com/whburkle/bobs_burgers/main/img/bobs_burgers_logo.png" />
-                <Link to="/episodes" className="nav-link">Episodes</Link>
-                <Link to="/characters" className="nav-link">Characters</Link>
+                <NavBar/>
             </header>
+            <div className="main-container">
+
+            </div>
 
             <footer>
                 <div className="imagecarousel">
