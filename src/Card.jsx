@@ -1,3 +1,4 @@
+
 import React from 'react';
 import favoriteList from './favoriteList';
 
@@ -22,6 +23,5 @@ function Fav() {
     </div>
   );
 }
-
 
 export default Fav;
