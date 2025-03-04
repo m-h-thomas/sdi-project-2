@@ -69,7 +69,7 @@
 }
 
 .burger-icon:hover {
-    transform: scale(1.2);
+    transform: translateX(-50%) scale(1.2);
 }
 
 /* Fade-in animation for burger icon */
