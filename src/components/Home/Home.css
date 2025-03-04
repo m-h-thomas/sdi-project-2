@@ -18,6 +18,17 @@ header {
     padding: 14px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
  }
+ @font-face {
+    font-family: 'Bob\'s Burgers';
+    src: url('https://www.fontsaddict.com/fontface/bobs-burgers.ttf');
+  }
+
+.nav-link {
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+    font-family: 'Bob\'s Burgers', sans-serif; 
+}
 
 body {
     margin: 0;
@@ -26,8 +37,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-
 
 footer {
     position: fixed;
@@ -68,3 +77,8 @@ footer {
 .imagecarousel:hover {
     animation-play-state: paused;
 }
+
+
+
+
+
