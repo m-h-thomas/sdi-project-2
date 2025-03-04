@@ -5,12 +5,16 @@ import NavBar from "../NavBar/NavBar";
 
 function Home(){
     return(
-        <div>
+        <div className="home-body">
             <header>
                 <NavBar/>
             </header>
             <div className="main-container">
-
+                <div className="main-text">
+                    <p>Sample Text</p><br />
+                    <p>Episode 5</p><br />
+                    <p>Whatever the title is</p><br />
+                </div>
             </div>
 
             <footer>
