@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-route
 import Home from '../Home/Home.jsx';
 import Episodes from '../Episodes/Episodes.jsx'
 
+import CharacterShots from '../Characters/Characters.jsx';
+
+import BoDChalkboard from '../BoDChalkboard/BoDChalkboard.jsx'
 
 
 
@@ -21,9 +24,10 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
+            <Route path="/characters" element={<CharacterShots/>} />
         </Routes>
-        <button onClick={() => {navigate('/')}}>Home</button>
-        <button onClick={() => {navigate('/episodes')}}>Episodes</button>
+        {/* <button onClick={() => {navigate('/')}}>Home</button>
+        <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}
       </>
     )
   }

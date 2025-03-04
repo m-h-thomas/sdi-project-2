@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: white;
+
+ }
+
+ @font-face {
+    font-family: "Bob's Burgers";
+    src: url('https://www.fontsaddict.com/fontface/bobs-burgers.ttf');
+  }
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Bob's Burgers", sans-serif;
+    font-size: 48px;
+    margin-right: 100px;
+}
