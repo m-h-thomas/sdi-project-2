@@ -4,7 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
-
+@font-face {
+  font-family: 'chalkboard';
+  src: url('https://www.fontsaddict.com/fontface/chalkboard.ttf') format('truetype');
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,3 +43,34 @@
 .read-the-docs {
   color: #888;
 }
+
+.burger-button {
+  border: none;
+  background: none;
+  cursor:grab;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.2s;
+
+}
+
+.burger-button:active {
+  cursor: grabbing;
+}
+.burger-button:hover {
+  transform: scale(1.1);
+}
+
+.burger-image {
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+}
+
+.burger-text {
+  /* font-weight: bold; */
+  text-align: center;
+  font-family: 'Patrick Hand', sans-serif;
+  text-wrap: balance;
+}
+

@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, 'chalkboard';
   line-height: 1.5;
   font-weight: 400;
 
@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: 'chalkboard';
+  src: url('https://www.fontsaddict.com/fontface/chalkboard.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
