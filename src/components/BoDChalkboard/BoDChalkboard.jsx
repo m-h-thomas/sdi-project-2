@@ -62,7 +62,7 @@ const BoDChalkboard = () => {
             </div>
 
             {/* Burger Icon to Fetch a New Random Burger (Easter Egg) */}
-            <div className="burger-icon" onClick={fetchBurger} title="Click me!">
+            <div className="burger-icon" onClick={fetchBurger}>
                 <img src={burgerButton} alt="Burger Icon" style={{ width: '40px', cursor: 'pointer' }} />
             </div>
         </div>
