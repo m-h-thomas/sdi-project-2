@@ -20,6 +20,12 @@ function Home(){
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/3.jpg" />
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/4.jpg" />
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/5.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/1.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/2.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/1.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/2.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/3.jpg" />
+
                 </div>
             </footer>
         </div>
