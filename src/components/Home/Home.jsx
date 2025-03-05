@@ -2,14 +2,30 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Home.css";
 
+import DisplayEpisode from "./MainEpisodeScreen";
+
+import NavBar from "../NavBar/NavBar";
+
+
 function Home(){
     return(
-        <div>
+        <div className="home-body">
             <header>
-                <img src="https://raw.githubusercontent.com/whburkle/bobs_burgers/main/img/bobs_burgers_logo.png" />
-                <Link to="/episodes" className="nav-link">Episodes</Link>
-                <Link to="/characters" className="nav-link">Characters</Link>
+                <NavBar/>
             </header>
+            <div className="main-container">
+                <div className="main-text">
+                    <p>Sample Text</p><br />
+                    <p>Episode 5</p><br />
+                    <p>Whatever the title is</p><br />
+                </div>
+            </div>
+
+            <section className="latest-episode">
+                <h2>Latest Episode</h2>
+                <DisplayEpisode />  
+            </section>
+
 
             <footer>
                 <div className="imagecarousel">
@@ -18,6 +34,12 @@ function Home(){
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/3.jpg" />
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/4.jpg" />
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/5.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/1.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/2.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/1.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/2.jpg" />
+                    <img src="https://bobsburgers-api.herokuapp.com/images/characters/3.jpg" />
+
                 </div>
             </footer>
         </div>

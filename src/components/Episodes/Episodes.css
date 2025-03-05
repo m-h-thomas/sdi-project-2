@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Bob\'s Burgers';
+  src: url('/bobs-burgers.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Bob\'s Burgers', sans-serif;
+}
+
+h1 {
+  font-family: 'Bob\'s Burgers';
+  font-size: 64px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Bob\'s Burgers';
+  font-size: 48px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 35%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  color: white;
+  padding: 20px 0;
+  border: 1px solid black;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4), 0px -4px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  background-color: white;
+}
+.imagecarousel {
+  height: 100px;
+  display: flex;
+  width: fit-content;
+  gap: 280px;
+  margin: 0 auto;
+}
+.imagecarousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  height: 100px;
+  width: auto;
+}
+.imagecarousel {
+  animation: bannermove 10s linear infinite;
+}
+@keyframes bannermove {
+  0% {
+      transform: translateX(5%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+.imagecarousel:hover {
+  animation-play-state: paused;
+}
+
+.episode-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.episode-list li {
+  font-family:Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-size: 22px;
+  align-content: center;
+}
+
+.episode-list li:hover {
+  transform: scale(1.05);
+}
+
+
+.favorite-btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}

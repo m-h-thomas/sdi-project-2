@@ -1,0 +1,7 @@
+.episode-container {
+    align-items: center;
+    padding-top: 80px ;
+    justify-content: center;
+    display: flex;
+    height: 70vh;
+}
