@@ -9,22 +9,23 @@
 /* Blackboard background */
 .chalkboard {
     background-color: #333;
-    padding: 20px;
+    padding: 10px;
     border: 10px solid #a83b3b;
     border-radius: 10px;
     color: #fff;
     text-align: center;
     max-width: 300px;
-    max-height: 450px;
+    max-height: 400px;
     width: 300px;
-    height: 450px;
-    margin: 50px auto;
+    height: 400px;
+    margin: auto;
     font-family: 'DeCapoers', cursive;
-    position: relative;
+    position: fixed;
+    margin-top: -130px;
     
     /* Chalkboard texture background */
     background-image: url('./images/chalkboard-texture.png');
-    background-size: cover;    /* Ensure it covers the entire area */
+    background-size: cover;   
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -38,17 +39,20 @@
     letter-spacing: 1px;
     line-height: 1.5;
     padding: 10px;
-    margin: 10px 0;
+    margin: 0;
     overflow: hidden;
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /* Header text */
 .bod-header {
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: -75px;
     color: #fff;
     text-shadow: 0 0 3px #fff;
+    text-decoration: underline;
 }
 
 /* Loading text style */
@@ -60,7 +64,9 @@
 /* Burger Icon Styles */
 .burger-icon {
     cursor: pointer;
-    margin-top: 10px;
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
     animation: fade-in 2s ease-in-out;
     transition: transform 0.3s;
 }

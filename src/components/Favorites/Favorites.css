@@ -1,0 +1,43 @@
+
+
+.imagecarousel {
+    bottom: 1%;
+    left: 35%;
+    width: 30%;
+    position: fixed;
+    color: white;
+    border: 2px solid black;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+
+.carousel-content {
+    display: flex;
+    animation: bannermove 10s linear infinite;
+}
+
+.imagecarousel img {
+    box-shadow: 2px 2px 8px #8a8a8a;
+    height: 100px;
+    width: 75px;
+    flex-shrink: 0;  
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.imagecarousel:hover .carousel-content {
+    animation-play-state: paused; 
+}
