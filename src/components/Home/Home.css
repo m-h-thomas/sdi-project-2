@@ -57,7 +57,7 @@ footer {
 .main-container{
     width: 50%; 
     height: 400px; 
-    margin-top: 225px;
+    margin-top: 100px;
     background-image: url('./src/assets/family.png');
     background-size: cover; 
     background-position: center; 
@@ -66,24 +66,40 @@ footer {
     border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
     border-color: black;
     border-style: solid;
-    border-width: 2px;
+    border-width: 4px;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    color: white;
+    color: #F3EE10;
     position: relative;
 }
 .main-text{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 0%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    animation: bounce 2s ease-in-out infinite alternate;
 
 }
 
-
+@keyframes bounce {
+    0% {
+        transform:translate(-50%, -60%);
+        text-shadow:
+                    0 2px 0 #FE041B,
+                    0 2px 3px rgba(0, 0, 0, 1);  
+    }
+    100% {
+      transform:translate(-50%, -50%);
+      text-shadow:  0 20px 0 black,
+                    0 0px 20px rgba(0, 0, 0, .8);
+    }
+  }
 
  

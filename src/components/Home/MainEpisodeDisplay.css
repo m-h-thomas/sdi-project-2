@@ -1,0 +1,55 @@
+.images {
+    display: flex;
+    justify-content: space-around; /* Ensures spacing between items */
+    align-items: flex-start; /* Aligns text and images at the top */
+    gap: 20px; /* Adds space between elements */
+    margin-top: 20px; /* Adds some spacing from the previous section */
+}
+.episode-container {
+    position: absolute;
+    /* left: 50%;  */
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    /* color: antiquewhite;  */
+}
+
+.episode-text {
+    background: #40393975;
+    padding: 10px;
+    border-radius: 50px;
+    width:fit-content;
+    box-shadow: 0px 4px 20px #0000009e;
+}
+.episode-section-pest,
+.episode-section-store {
+    /* text-align: center; Centers text above the image */
+    max-width: 200px; /* Controls width to keep things balanced */
+    color: #FE041B;
+    text-decoration: underline;
+    font-size: larger;
+    padding-top: 4%;
+
+}
+
+.episode-section-pest img {
+    width: 200px; 
+    height: auto;
+    display: block; 
+    margin: 10px auto 0; /* Centers image below text */
+}
+.episode-section-pest img:hover {
+    transform: scale(1.2);
+}
+
+.episode-section-store img {
+    width: 100px; /* Makes images smaller */
+    height: auto;
+    display: block; 
+    margin: 10px auto 0; /* Centers image below text */
+}
+
+.episode-section-store img:hover {
+    transform: scale(1.2);
+}

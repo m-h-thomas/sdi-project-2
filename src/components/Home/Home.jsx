@@ -15,16 +15,15 @@ function Home(){
             </header>
             <div className="main-container">
                 <div className="main-text">
-                    <p>Sample Text</p><br />
+                <h2>Latest Episode</h2>
+                
+                    {/* <p>Sample Text</p><br />
                     <p>Episode 5</p><br />
-                    <p>Whatever the title is</p><br />
+                    <p>Whatever the title is</p><br /> */}
                 </div>
+                <DisplayEpisode /> 
             </div>
 
-            <section className="latest-episode">
-                <h2>Latest Episode</h2>
-                <DisplayEpisode />  
-            </section>
 
 
             <footer>
