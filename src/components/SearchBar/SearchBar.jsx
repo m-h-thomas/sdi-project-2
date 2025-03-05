@@ -37,13 +37,7 @@ const SearchBar = () => {
         onChange={handleInputChange}
         placeholder='Search for a lovable character'
       />
-      <ul>
-        {filteredCharacters.map(character => (
-          <li key={character.id} onClick={() => handleCharacterClick(character.id)}>
-            {character.name}
-          </li>
-        ))}
-      </ul>
+     
     </div>
   );
 };
