@@ -20,7 +20,7 @@ const CharacterShots = () => {
   }, []); 
 
   const imageClick = (id) =>{
-    navigate('/character/${id}');
+    navigate('/characters/${id}');
   };
 
   return (
