@@ -1,43 +1,57 @@
 
-
-.imagecarousel {
-    bottom: 1%;
-    left: 35%;
-    width: 30%;
-    position: fixed;
-    color: white;
-    border: 2px solid black;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    overflow: hidden;
-    display: flex;
-    background-color: white;
+/* Favorites List Styles */
+.favorite-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
 }
 
-.carousel-content {
-    display: flex;
-    animation: bannermove 10s linear infinite;
+.favorite-list li {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-size: 22px;
+  align-content: center;
 }
 
-.imagecarousel img {
-    box-shadow: 2px 2px 8px #8a8a8a;
-    height: 100px;
-    width: 75px;
-    flex-shrink: 0;  
+.favorite-list li:hover {
+  transform: scale(1.05);
 }
 
-@keyframes bannermove {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+/* Optional: Add spacing between the heading and the list */
+.favorite-list-container {
+  margin-top: 40px;
 }
 
-.imagecarousel:hover .carousel-content {
-    animation-play-state: paused; 
+/* Style for the title of the favorites section */
+.favorite-list h2 {
+  font-family: 'Bob\'s Burgers';
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for "No favorite episodes" message */
+.favorite-list p {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+h4 {
+  font-family: 'Bob\'s Burgers';
+  text-align: center;
+  font-size: 32px;
 }
