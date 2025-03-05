@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } f
 import './Characters.css';
 
 const CharacterPix = ({ image, name, gender, onClick }) => (
-  <div className="character-card" onclick={onClick}>
+  <div className="character-card" onClick={onClick}>
     <img src={image} alt={name} />
     <p>{name} ({gender})</p>
   </div>
@@ -11,7 +11,7 @@ const CharacterPix = ({ image, name, gender, onClick }) => (
 
 const CharacterShots = () => {
   const [char, setChar] = useState([]);
-  const navigate =useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('https://bobsburgers-api.herokuapp.com/characters')
@@ -19,27 +19,25 @@ const CharacterShots = () => {
       .then(data => setChar(data));
   }, []); 
 
-  const imageClick = (id) =>{
-    navigate('/characters/${id}');
+  const imageClick = (id) => {
+    navigate(`/characters/${id}`);
   };
 
   return (
     <div className='head-shots'>
       {char.map(character => (
         <CharacterPix
-        
           key={character.id}
           image={character.image}
           name={character.name}
           gender={character.gender}
-          onClick={()=> imageClick(character.id)}
-        
+          onClick={() => imageClick(character.id)}
         />
-        
       ))}
     </div>
   );
 };
 
-export default CharacterShots
+export default CharacterShots;
+
 
