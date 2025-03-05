@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom';
 import './Characters.css';
+import NavBar from "../NavBar/NavBar";
 
 const CharacterPix = ({ image, name, onClick }) => (
   <div className="character-card" onClick={onClick}>
@@ -24,19 +25,22 @@ const CharacterShots = () => {
   };
 
   return (
+   <>
+   <NavBar/>
     <div className='head-shots'>
       {char.map(character => (
         <CharacterPix
-
 
           key={character.id}
           image={character.image}
           name={character.name}
           onClick={() => imageClick(character.id)}
+
         />
 
       ))}
     </div>
+      </>
   );
 };
 
