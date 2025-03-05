@@ -10,6 +10,9 @@ import "./App.css";
 
 
 
+
+
+
 function App() {
     return(
       <div className='page-container'>
@@ -33,6 +36,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/characters" element={<CharacterShots/>} />
+            <Route path="/characters/:id" element={<CharacterDetails />} />
         </Routes>
         {/* <button onClick={() => {navigate('/')}}>Home</button>
         <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}
