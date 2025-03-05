@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Episodes.css";
-import NavBar from "../NavBar/NavBar";
 import FavoriteButton from "../Favorites/FavoriteButton";
 import Favorites from "../Favorites/Favorites"; // Import the Favorites component
 
@@ -53,10 +52,6 @@ export default function Episodes() {
 
   return (
     <div>
-      <header>
-        <NavBar />
-      </header>
-
       <div>
         <h1>Episode List</h1>
 
@@ -80,8 +75,10 @@ export default function Episodes() {
           </div>
         ))}
 
+
         {/* Render the Favorites Component */}
         <Favorites favorite={favorite} />
+
       </div>
     </div>
   );
