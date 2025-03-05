@@ -62,11 +62,14 @@
     cursor: pointer;
     margin-top: 10px;
     animation: fade-in 2s ease-in-out;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
     transition: transform 0.3s;
 }
 
 .burger-icon:hover {
-    transform: scale(1.2);
+    transform: translateX(-50%) scale(1.2);
 }
 
 /* Fade-in animation for burger icon */

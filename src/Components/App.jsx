@@ -1,5 +1,9 @@
 import React from 'react';
-import BoDChalkboard from './Components/BoDChalkboard';
+import BoDChalkboard from './BoDChalkboard/BoDChalkboard';
+import './BoDChalkboard/BoDChalkboard.css';
+import burgerButton from './BoDChalkboard/images/burger-button.png';
+
+
 
 function App() {
   return (

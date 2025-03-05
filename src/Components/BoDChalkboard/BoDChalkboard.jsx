@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './BoDChalkboard.css';
 import burgerButton from './images/burger-button.png';  // Import burger icon
+import chalkSound from '../../sounds/chalk-sound.mp3';
 
 const BoDChalkboard = () => {
     const [burger, setBurger] = useState(null);
     const [loading, setLoading] = useState(true);  // Start loading initially
     const textRef = useRef(null);  // Ref for text
+    const soundRef = useRef(null);  // Ref for sound
 
     // Fetch Random Burger Function
     const fetchBurger = async () => {
@@ -14,6 +16,11 @@ const BoDChalkboard = () => {
             const response = await fetch('https://bobsburgers-api.herokuapp.com/burgerOfTheDay/');
             const data = await response.json();
             const randomBurger = data[Math.floor(Math.random() * data.length)];
+            
+            if (!randomBurger.name) {
+                randomBurger.name = "Mystery Burger";  // Set a default name for unnamed burger
+            }
+                
             setBurger(randomBurger);
         } catch (error) {
             console.error('Error fetching Burger of the Day:', error);
@@ -38,11 +45,23 @@ const BoDChalkboard = () => {
             let currentWordIndex = 0;
             textRef.current.textContent = '';  // Clear text before typing
 
+            //Start sound playback when typing begins
+            if (soundRef.current) {
+                soundRef.current.currentTime = 0;  // Rewind to start
+                soundRef.current.play();
+            }
+
             const typeWord = () => {
                 if (currentWordIndex < words.length) {
                     textRef.current.textContent += words[currentWordIndex] + ' ';
                     currentWordIndex++;
                     setTimeout(typeWord, 300);  // Delay between words
+                } else {
+                    // Stop sound playback when typing is complete
+                    if (soundRef.current) {
+                        soundRef.current.pause();
+                        soundRef.current.currentTime = 0;  // Reset sound to start
+                    }
                 }
             };
 
@@ -62,9 +81,12 @@ const BoDChalkboard = () => {
             </div>
 
             {/* Burger Icon to Fetch a New Random Burger (Easter Egg) */}
-            <div className="burger-icon" onClick={fetchBurger} title="Click me!">
+            <div className="burger-icon" onClick={fetchBurger}>
                 <img src={burgerButton} alt="Burger Icon" style={{ width: '40px', cursor: 'pointer' }} />
             </div>
+
+            {/* Hidden Audio Element for Chalk Sound */}
+            <audio ref={soundRef} src={chalkSound} style={{ display: 'none' }} />
         </div>
     );
 };
