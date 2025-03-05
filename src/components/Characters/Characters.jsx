@@ -16,18 +16,18 @@ const CharacterShots = () => {
     fetch('https://bobsburgers-api.herokuapp.com/characters')
       .then(res => res.json())
       .then(data => setChar(data));
-  }, []); 
+  }, []);
 
   return (
     <div className='head-shots'>
       {char.map(character => (
         <CharacterPix
-        
+
           key={character.id}
           image={character.image}
           name={character.name}
           gender={character.gender}
-        
+
         />
       ))}
     </div>
@@ -35,4 +35,3 @@ const CharacterShots = () => {
 };
 
 export default CharacterShots
-
