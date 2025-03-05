@@ -2,7 +2,7 @@
 import React from 'react';
 import './Favorites.css'
 
-export default function Favorites({ favorite }) {
+export default function Favorites({ favorite=[] }) {
   return (
     <div className="favorite-list-container">
       <h2>My Favorite Episodes</h2>

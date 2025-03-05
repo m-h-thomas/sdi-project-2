@@ -5,6 +5,7 @@ import Episodes from '../Episodes/Episodes.jsx'
 import CharacterShots from '../Characters/Characters.jsx';
 import NavBar from '../NavBar/NavBar.jsx'
 import Favorites from '../Favorites/Favorites.jsx';
+import CharacterDetails from '../Characters/CharacterDetail.jsx';
 
 import "./App.css";
 
