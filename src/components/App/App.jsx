@@ -4,7 +4,7 @@ import Home from '../Home/Home.jsx';
 import Episodes from '../Episodes/Episodes.jsx'
 
 import CharacterShots from '../Characters/Characters.jsx';
-
+import CharacterDetails from '../Characters/CharacterDetail.jsx';
 import BoDChalkboard from '../BoDChalkboard/BoDChalkboard.jsx'
 
 
@@ -25,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/characters" element={<CharacterShots/>} />
+            <Route path="/characters/:id" element={<CharacterDetails />} />
         </Routes>
         {/* <button onClick={() => {navigate('/')}}>Home</button>
         <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}
