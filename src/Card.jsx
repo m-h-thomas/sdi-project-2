@@ -1,6 +1,6 @@
 
 import React from 'react';
-import favoriteList from './favoriteList';
+import favorite from './Favorites';
 
 const FavoriteCard = ({ title, season, episode }) => (
   <div className="card">
