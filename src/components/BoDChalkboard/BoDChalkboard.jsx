@@ -14,6 +14,11 @@ const BoDChalkboard = () => {
             const response = await fetch('https://bobsburgers-api.herokuapp.com/burgerOfTheDay/');
             const data = await response.json();
             const randomBurger = data[Math.floor(Math.random() * data.length)];
+            
+            if (!randomBurger.name) {
+                randomBurger.name = "Mystery Burger";  // Set a default name for unnamed burger
+            }
+                
             setBurger(randomBurger);
         } catch (error) {
             console.error('Error fetching Burger of the Day:', error);
