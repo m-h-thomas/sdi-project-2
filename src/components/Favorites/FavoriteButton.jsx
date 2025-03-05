@@ -1,13 +1,9 @@
 import { useState } from 'react';
-import './FavoriteButton.css'; // Ensure you import the CSS file for styling
+import './FavoriteButton.css';
 
-function FavoriteButton() {
-  // State to keep track of the favorited state (true/false)
-  const [isFavorited, setIsFavorited] = useState(false);
-
-  // Toggle the favorited state on click
+function FavoriteButton({ episode, onToggleFavorite, isFavorited }) {
   const handleClick = () => {
-    setIsFavorited(!isFavorited);
+    onToggleFavorite(episode); // Toggle favorite status on click
   };
 
   return (
