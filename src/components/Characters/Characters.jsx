@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom';
 import './Characters.css';
 
-const CharacterPix = ({ image, name, gender, onClick }) => (
+const CharacterPix = ({ image, name, onClick }) => (
   <div className="character-card" onClick={onClick}>
     <img src={image} alt={name} />
-    <p>{name} ({gender})</p>
+    <p>{name}</p>
   </div>
 );
 
@@ -30,7 +30,6 @@ const CharacterShots = () => {
           key={character.id}
           image={character.image}
           name={character.name}
-          gender={character.gender}
           onClick={() => imageClick(character.id)}
         />
       ))}

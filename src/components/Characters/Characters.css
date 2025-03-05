@@ -13,7 +13,28 @@
   }
   
   .character-card img {
-    width: 200px;
+   width: 200px;
     height: 200px;
   }
-  
+  .baseball-card{
+    display: inline-flex;
+    text-align: center;
+    border: 1px, solid,black;
+    padding:20px;
+    margin:20px;
+    
+  }
+  .details img{
+    height: 250px;
+    border:1px black, solid;
+    padding: 5px;
+  }
+  .details{
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+  }
+  .detail-body{
+    text-align: left;
+    margin-top: 30px;
+  }
