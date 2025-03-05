@@ -1,20 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import BoDChalkboard from '../BoDChalkboard/BoDChalkboard.jsx'
+import DisplayEpisode from "./MainEpisodeScreen";
 import "./Home.css";
 
-import DisplayEpisode from "./MainEpisodeScreen";
-
-import NavBar from "../NavBar/NavBar";
-
-
-function Home(){
+export default function Home(){
     return(
         <div className="home-body">
-            <header>
-                <NavBar/>
-            </header>
             <div className="main-container">
                 <div className="main-text">
+
                 <h2>Latest Episode</h2>
                 
                     {/* <p>Sample Text</p><br />
@@ -39,10 +33,18 @@ function Home(){
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/2.jpg" />
                     <img src="https://bobsburgers-api.herokuapp.com/images/characters/3.jpg" />
 
+
+                  <section className="latest-episode">
+                    <h2>Latest Episode</h2>
+                    <DisplayEpisode />  
+                  </section>
+
                 </div>
-            </footer>
+             </div>
+             <div className="chalkboard-container">
+                <BoDChalkboard />
+             </div>
         </div>
     )
 }
 
-export default Home;
