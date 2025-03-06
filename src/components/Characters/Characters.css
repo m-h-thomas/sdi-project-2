@@ -11,19 +11,20 @@
     padding: 10px;
     box-sizing: border-box; 
     text-align: center;
+    cursor: pointer;
   }
   
   .character-card img {
-   width: 200px;
+    width: 200px;
     height: 200px;
   }
+
   .baseball-card{
     display: inline-flex;
     text-align: center;
     border: 1px, solid,black;
     padding:20px;
     margin:50px;
-    
   }
   .details img{
     height: 250px;
