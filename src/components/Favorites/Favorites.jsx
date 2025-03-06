@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import './Favorites.css'
 
-export default function Favorites({ favorite=[] }) {
+export default function Favorites({ favorite = [] }) {
 
   const navigate = useNavigate()
 
@@ -17,7 +17,7 @@ export default function Favorites({ favorite=[] }) {
         <ul className="favorite-list">
         {favorite.map(favEpisode => (
           <li key={favEpisode.id} onClick={() => cardClick(favEpisode.id)}>
-          {favEpisode.name} <br /> S{favEpisode.season}E{favEpisode.episode}
+          {favEpisode.name} <br /> S:{favEpisode.season} E:{favEpisode.episode}
           </li>
         ))}
         </ul>
