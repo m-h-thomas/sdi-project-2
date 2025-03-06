@@ -1,17 +1,15 @@
 import React from 'react';
-import BoDChalkboard from './BoDChalkboard/BoDChalkboard';
-import './BoDChalkboard/BoDChalkboard.css';
-import burgerButton from './BoDChalkboard/images/burger-button.png';
-
-
+import BoDChalkboard from './Components/BoDChalkboard/BoDChalkboard';
+import CharacterTrivia from './Components/BoDChalkboard/CharacterTrivia/CharacterTrivia';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to Bob's Burgers Web App!</h1>
-      <BoDChalkboard />  {/* Display the BoDChalkboard here */}
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>Welcome to Bob's Burgers Web App!</h1>
+            <BoDChalkboard />
+            <CharacterTrivia />
+        </div>
+    );
 }
 
 export default App;
