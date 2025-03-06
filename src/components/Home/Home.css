@@ -14,13 +14,13 @@
 }
 
 .main-container{
-    width: 50%; 
-    height: 400px; 
+    width: 60%;
+    height: 600px;
     margin-top: 100px;
     margin-top: 150px;
     background-image: url('./src/assets/family.png');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     justify-content: center;
     align-content: center;
     border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
@@ -35,6 +35,7 @@
     color: #F3EE10;
     position: relative;
 }
+
 .main-text{
     position: absolute;
     left: 50%;
@@ -53,7 +54,7 @@
         transform:translate(-50%, -60%);
         text-shadow:
                     0 2px 0 #FE041B,
-                    0 2px 3px rgba(0, 0, 0, 1);  
+                    0 2px 3px rgba(0, 0, 0, 1);
     }
     100% {
       transform:translate(-50%, -50%);
@@ -63,4 +64,4 @@
   }
 
 
- 
+

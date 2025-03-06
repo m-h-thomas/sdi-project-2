@@ -50,8 +50,16 @@ export default function EpisodeDetail () {
                         <p>
                           <strong>{episodeDetails.name}</strong>
                         </p>
+                        <br></br>
+                        <p>
+                          {episodeDetails.description}
+                        </p>
+                        <br></br>
                         <p>
                           <em>Aired:</em> {episodeDetails.airDate}
+                        </p>
+                        <p>
+                          <em>Total Viewers:</em> {episodeDetails.totalViewers}
                         </p>
                       </div>
                     )}
