@@ -24,9 +24,11 @@ function App() {
           <NavBar/>
         </div>
         <InnerApp />
-        <div className='footer'>
-          {/* <Favorites favorite={favorite} /> */}
-        </div>
+
+        {/* <div className='footer'>
+          <Favorites />
+        </div> */}
+
       </div>
     )
   }
