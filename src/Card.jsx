@@ -1,7 +1,6 @@
 
 import React from 'react';
 import favorite from './Favorites';
-
 const FavoriteCard = ({ title, season, episode }) => (
   <div className="card">
     <h3>{title}</h3>

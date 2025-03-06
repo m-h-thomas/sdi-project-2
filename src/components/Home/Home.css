@@ -1,21 +1,39 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Original home-body styles with updated properties */
 .home-body {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-between;  /* Updated to space-between for left and right alignment */
+    align-items: center;
     gap: 20px;
+    padding: 20px;  /* Added padding from updated CSS */
 }
 
+<<<<<<< HEAD
+/* Left side for CharacterTrivia and GIF grid */
+.left-side {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Main container with original styles */
+.main-container {
+    width: 45%; 
+    height: 400px; 
+=======
 .main-container{
     width: 50%;
     height: 600px;
+>>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     margin-top: 150px;
     background-image: url('./src/assets/family.png');
     background-size: cover;
@@ -33,9 +51,18 @@
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     color: #F3EE10;
     position: relative;
+    flex: 2;  /* Added to balance the layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+<<<<<<< HEAD
+/* Main text with original styles */
+.main-text {
+=======
 .main-text{
+>>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     position: absolute;
     left: 50%;
     top: 0%;
@@ -47,20 +74,50 @@
     animation: bounce 2s ease-in-out infinite alternate;
 }
 
+/* Chalkboard container styles */
+.chalkboard-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+/* GIF grid and style */
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gif-style {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Original bounce animation */
 @keyframes bounce {
     0% {
-        transform:translate(-50%, -60%);
+        transform: translate(-50%, -60%);
         text-shadow:
+<<<<<<< HEAD
+            0 2px 0 #FE041B,
+            0 2px 3px rgba(0, 0, 0, 1);  
+=======
                     0 2px 0 #FE041B,
                     0 2px 3px rgba(0, 0, 0, 1);
+>>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     }
     100% {
-      transform:translate(-50%, -50%);
-      text-shadow:  0 20px 0 black,
-                    0 0px 20px rgba(0, 0, 0, .8);
+        transform: translate(-50%, -50%);
+        text-shadow:  0 20px 0 black,
+                      0 0px 20px rgba(0, 0, 0, .8);
     }
+<<<<<<< HEAD
+}
+=======
   }
 
 
 
+>>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
