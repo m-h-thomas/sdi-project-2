@@ -58,6 +58,7 @@ function DisplayEpisode() {
       {episode && (
         <div className="episode-box">
           <p><strong> {episode.name}</strong></p>
+          <p><em>Season: {episode.season} / Episode: {episode.episode}</em></p>
           <p><em>Aired:</em> {episode.airDate}</p>
         </div>
       )}
