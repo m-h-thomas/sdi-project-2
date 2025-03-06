@@ -43,7 +43,10 @@ const CharacterShots = () => {
   return (
    <>
    <NavBar/>
-   <div className='seach-container'>
+   <div className='search-container'>
+   
+      
+
 
    <input
    className='search-bar'
@@ -52,7 +55,10 @@ const CharacterShots = () => {
    onChange={handleInput}
    placeholder='Search for a lovable character'
    />
+   
+   
    </div>
+
     <div className='head-shots'>
       {filter.map(character => (
         <CharacterPix

@@ -25,23 +25,32 @@
     margin:50px;
     
   }
-  .search-bar{
-    margin-top:50px;
-    margin-bottom: 10px;
+  .search-bar {
     display: flex;
     flex-direction: row;
     width: 250px;
-    margin-left: 10px;
     background-color: rgba(254, 254, 4, 0.863);
     border-color: red;
     border-radius: 5px;
     font-weight: 400;
     position: fixed;
+    z-index: 5;
+    margin-right: 10px;
+    margin-bottom:20px;
+    text-indent: 5px;
   }
-  .search-container{
   
-
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    z-index: 5;
   }
+  
+ 
+
   /* .details img{
     height: 250px;
     border:1px black, solid;
