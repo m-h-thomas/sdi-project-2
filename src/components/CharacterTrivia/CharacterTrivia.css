@@ -1,23 +1,22 @@
 .character-trivia-container {
-    background-color: #FFEB3B;       /* Bright yellow background */
-    border: 3px solid #000000;       /* Black border for contrast */
-    padding: 15px;                   /* Reduced padding */
+    background-color: #FFEB3B;       
+    border: 3px solid #000000;       
+    padding: 15px;                   
     border-radius: 15px;
     margin: 20px;
-    max-width: 300px;                /* Reduced max-width */
+    max-width: 300px;                
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     animation: float 2s ease-in-out infinite;
-    overflow-y: hidden;              /* Remove scrolling */
+    overflow-y: hidden;              
 }
 
-/* Image styling to fix size and prevent distortion */
 .character-trivia-container img {
-    width: 200px;                    /* Fixed width for images */
-    height: 250px;                   /* Fixed height for images */
-    object-fit: cover;               /* Crop images to fit the container */
-    border-radius: 10px;             /* Rounded corners */
-    margin-bottom: 10px;             /* Spacing below image */
+    width: 200px;                    
+    height: 250px;                   
+    object-fit: cover;               
+    border-radius: 10px;             
+    margin-bottom: 10px;             
 }
 
 @keyframes float {
@@ -27,15 +26,15 @@
 
 .character-trivia-container h2 {
     font-family: 'Courier New', Courier, monospace;
-    color: #D32F2F;                  /* Bold red text */
-    text-shadow: 2px 2px #000000;    /* Black outline for text */
+    color: #D32F2F;                  
+    text-shadow: 2px 2px #000000;    
     margin-bottom: 10px;
 }
 
 .trivia-text {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #D32F2F;                  /* Red text for facts */
-    text-shadow: 1px 1px #000000;    /* Black outline for readability */
+    color: #D32F2F;                  
+    text-shadow: 1px 1px #000000;    
     margin-bottom: 15px;
     min-height: 60px;
     padding: 5px;
@@ -44,8 +43,8 @@
 }
 
 .trivia-button {
-    background-color: #D32F2F;       /* Red button */
-    border: 2px solid #000000;       /* Black border for button */
+    background-color: #D32F2F;       
+    border: 2px solid #000000;       
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 10px;
@@ -53,12 +52,12 @@
     transition: transform 0.2s, background-color 0.3s ease;
     font-size: 16px;
     font-weight: bold;
-    color: #FFFFFF;                  /* White text for button */
+    color: #FFFFFF;                  
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .trivia-button:hover {
-    background-color: #B71C1C;       /* Darker red on hover */
+    background-color: #B71C1C;       
     transform: scale(1.05);
 }
 
