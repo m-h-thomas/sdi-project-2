@@ -22,9 +22,9 @@ function App() {
           <NavBar/>
         </div>
         <InnerApp />
-        <div className='footer'>
+        {/* <div className='footer'>
           <Favorites />
-        </div>
+        </div> */}
       </div>
     )
   }

@@ -27,20 +27,32 @@
     margin:50px;
   }
   .search-bar {
+    background-image: url("../public/images/louise.jpg");
+    background-size: 50px; 
+    background-position: left; 
+    background-repeat: no-repeat; 
     display: flex;
     flex-direction: row;
     width: 250px;
-    background-color: rgba(254, 254, 4, 0.863);
-    border-color: red;
-    border-radius: 5px;
+    height: 52px;
+
+    border: 2px solid black;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+
     font-weight: 400;
     position: fixed;
     z-index: 5;
     margin-right: 10px;
     margin-bottom:20px;
-    text-indent: 5px;
+    text-indent: 50px;
+    outline: none;
   }
-  
+
+
   .search-container {
     display: flex;
     justify-content: flex-end;
