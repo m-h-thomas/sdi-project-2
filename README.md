@@ -4,14 +4,34 @@ This app is intended to serve as a one-stop shop for fans of the show Bob's Burg
 
 - Curate a list of favorite episodes
 - Search for details on specific characters and episodes
-- Display a random Burger of the Day, with correlating episode information
+- Display a random Burger of the Day
+- Display latest episode information
 - View Pest Control truck jokes
 - View Store-Next-Door jokes
 
 ## How To Use
 
-This app only runs locally and requires the user to fork and clone down the repository. Once cloned down, the user will need to use the command ```cd sdi-project-2``` to move into the directory, then install the npm packages via the command ```npm install```. Lastly, the user then needs to run the command ```npm run dev``` to open the app in the browser.
+This app only runs locally and requires the user to fork and clone down the repository. 
+```git clone https://github.com/m-h-thomas/sdi-project-2.git```
+Once cloned down, the user will need to use the command ```cd sdi-project-2``` to move into the directory. 
+Then install the npm packages via the command 
+```npm install```. 
+Lastly, the user then needs to run the command below to open the app in the browser.
+```npm run dev``` 
+Additional commands that need to be installed to run this App:
+```npm install react-router-dom```
+```npm install @mui/material @emotion/react @emotion/styled```
+```npm install @mui/icons-material```
+
 
 ### Wire Frame
 
 ![Project 2 WireFrame](./public/images/wireFrame.png)
+
+## Authors
+Joshua Gore
+Jessica Hunt
+Essence Jackson
+Jason Jones
+Michael Thomas
+
