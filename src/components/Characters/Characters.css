@@ -26,7 +26,33 @@
     padding:20px;
     margin:50px;
   }
-  .details img{
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    background-color: rgba(254, 254, 4, 0.863);
+    border-color: red;
+    border-radius: 5px;
+    font-weight: 400;
+    position: fixed;
+    z-index: 5;
+    margin-right: 10px;
+    margin-bottom:20px;
+    text-indent: 5px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    z-index: 5;
+  }
+  
+ 
+
+  /* .details img{
     height: 250px;
     border:1px black, solid;
     padding: 5px;
@@ -39,4 +65,4 @@
   .detail-body{
     text-align: left;
     margin-top: 30px;
-  }
+  } */
