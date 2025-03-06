@@ -7,7 +7,7 @@ import NavBar from '../NavBar/NavBar.jsx'
 import Favorites from '../Favorites/Favorites.jsx';
 import CharacterDetails from '../Characters/CharacterDetail.jsx';
 import EpisodeDetail from '../Episodes/EpisodeDetail'
-
+import "../Favorites/Favorites.css"
 import "./App.css";
 
 
@@ -16,15 +16,19 @@ import "./App.css";
 
 
 function App() {
+
+
     return(
       <div className='page-container'>
         <div>
           <NavBar/>
         </div>
         <InnerApp />
+
         {/* <div className='footer'>
           <Favorites />
         </div> */}
+
       </div>
     )
   }

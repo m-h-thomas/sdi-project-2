@@ -1,0 +1,10 @@
+body {
+  background-image: url('/images/bobsBurgersStreet.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
