@@ -25,7 +25,24 @@
     margin:50px;
     
   }
-  .details img{
+  .search-bar{
+    margin-top:50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    margin-left: 10px;
+    background-color: rgba(254, 254, 4, 0.863);
+    border-color: red;
+    border-radius: 5px;
+    font-weight: 400;
+    position: fixed;
+  }
+  .search-container{
+  
+
+  }
+  /* .details img{
     height: 250px;
     border:1px black, solid;
     padding: 5px;
@@ -38,4 +55,4 @@
   .detail-body{
     text-align: left;
     margin-top: 30px;
-  }
+  } */

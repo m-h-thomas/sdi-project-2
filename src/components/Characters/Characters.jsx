@@ -13,12 +13,28 @@ const CharacterPix = ({ image, name, onClick }) => (
 const CharacterShots = () => {
   const [char, setChar] = useState([]);
   const navigate = useNavigate();
+  const[search, setSearch]=useState('');
+  const [filter, setFilter]=useState([]);
 
   useEffect(() => {
     fetch('https://bobsburgers-api.herokuapp.com/characters')
       .then(res => res.json())
-      .then(data => setChar(data));
+      .then(data => {
+        setChar(data);
+      setFilter(data);});
   }, []);
+
+  useEffect(()=>{
+    setFilter(
+      char.filter(character =>
+        character.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+  },[search, char]);
+
+  const handleInput=(event) =>{
+    setSearch(event.target.value);
+  }
 
   const imageClick = (id) => {
     navigate(`/characters/${id}`);
@@ -27,8 +43,18 @@ const CharacterShots = () => {
   return (
    <>
    <NavBar/>
+   <div className='seach-container'>
+
+   <input
+   className='search-bar'
+   type='text'
+   value={search}
+   onChange={handleInput}
+   placeholder='Search for a lovable character'
+   />
+   </div>
     <div className='head-shots'>
-      {char.map(character => (
+      {filter.map(character => (
         <CharacterPix
 
           key={character.id}
