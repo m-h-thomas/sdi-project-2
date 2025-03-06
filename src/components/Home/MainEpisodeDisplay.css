@@ -31,6 +31,12 @@
 
 }
 
+.episode-text:hover {
+    cursor:pointer;
+
+
+}
+
 .episode-section-pest,
 .episode-section-store {
     max-width: 200px; /* Controls width to keep things balanced */
