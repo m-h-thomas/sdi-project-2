@@ -24,7 +24,7 @@ const CharacterDetails = () => {
         <NavBar/>
         
 
-    <Card sx={{ maxWidth: 345, marginTop:10, marginLeft:'50%' }}>
+    <Card sx={{ maxWidth: 345, marginTop:10, marginLeft:'40vw' }}>
       
         <CardMedia
           component="img"
