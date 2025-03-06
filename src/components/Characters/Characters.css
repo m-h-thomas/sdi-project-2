@@ -3,17 +3,28 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top:50px;
+
   }
-  
+
   .character-card {
-    flex: 1 1 calc(20% - 10px); 
+    flex: 1 1 calc(20% - 10px);
     border: 1px solid #ccc;
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     text-align: center;
     cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-size: 22px;
+    align-content: center;
   }
-  
+
   .character-card img {
     width: 200px;
     height: 200px;
@@ -52,7 +63,6 @@
     outline: none;
   }
 
-
   .search-container {
     display: flex;
     justify-content: flex-end;
@@ -61,8 +71,8 @@
     width: 100%;
     z-index: 5;
   }
-  
- 
+
+
 
   /* .details img{
     height: 250px;

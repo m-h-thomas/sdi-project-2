@@ -44,14 +44,22 @@ export default function EpisodeDetail () {
             <div className="main-container">
 
                 <div className="episode-container">
-                  <div className="episode-text">
+                  <div className="episode-text" onClick={() => window.open(episodeDetails.wikiUrl)}>
                     {setEpisodeDetails && (
                       <div className="episode-box">
                         <p>
                           <strong>{episodeDetails.name}</strong>
                         </p>
+                        <br></br>
+                        <p>
+                          {episodeDetails.description}
+                        </p>
+                        <br></br>
                         <p>
                           <em>Aired:</em> {episodeDetails.airDate}
+                        </p>
+                        <p>
+                          <em>Total Viewers:</em> {episodeDetails.totalViewers}
                         </p>
                       </div>
                     )}
@@ -87,12 +95,6 @@ export default function EpisodeDetail () {
                         )}
                       </div>
                     )}
-                  </div>
-
-                  <div className="wiki-link">
-                    <a href={episodeDetails.wikiUrl} target="_blank" rel="noopener noreferrer">
-                      Even More Details at the Wiki
-                    </a>
                   </div>
 
                 </div>

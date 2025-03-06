@@ -1,10 +1,11 @@
 
 .images {
     display: flex;
-    justify-content: space-around; 
-    align-items: flex-start; 
-    gap: 20px; 
-    margin-top: 20px; 
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 20px;
+    
+
 }
 .episode-container {
     position: absolute;
@@ -28,13 +29,11 @@
     align-items: center;
     margin: 0 auto;
     text-align: center;
-
+    font-size: 22px;
 }
 
 .episode-text:hover {
     cursor:pointer;
-
-
 }
 
 .episode-section-pest,
@@ -49,24 +48,21 @@
 }
 
 .episode-section-pest img {
-    width: 200px; 
+    width: 200px;
     height: auto;
-    display: block; 
+    display: block;
     margin: 10px auto 0; /* center image below text */
 }
 .episode-section-pest img:hover {
     transform: scale(1.2);
     animation: drivingOff 3s backwards;
     animation-timing-function: linear;
-
-
-
 }
 
 .episode-section-store img {
     width: 130px; /* makes images smaller */
     height: auto;
-    display: block; 
+    display: block;
     margin: 10px auto 0; /* centers image below name */
 }
 
@@ -78,7 +74,7 @@
         transform: translateX(-90%);
         opacity: 0;
     }
-    
+
 }
 
 .episode-section-store img:hover {
