@@ -15,7 +15,6 @@
     padding: 20px;  /* Added padding from updated CSS */
 }
 
-<<<<<<< HEAD
 /* Left side for CharacterTrivia and GIF grid */
 .left-side {
     flex: 0.8;
@@ -29,11 +28,6 @@
 .main-container {
     width: 45%; 
     height: 400px; 
-=======
-.main-container{
-    width: 50%;
-    height: 600px;
->>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     margin-top: 150px;
     background-image: url('./src/assets/family.png');
     background-size: cover;
@@ -57,12 +51,8 @@
     align-items: center;
 }
 
-<<<<<<< HEAD
 /* Main text with original styles */
 .main-text {
-=======
-.main-text{
->>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     position: absolute;
     left: 50%;
     top: 0%;
@@ -100,24 +90,12 @@
     0% {
         transform: translate(-50%, -60%);
         text-shadow:
-<<<<<<< HEAD
             0 2px 0 #FE041B,
             0 2px 3px rgba(0, 0, 0, 1);  
-=======
-                    0 2px 0 #FE041B,
-                    0 2px 3px rgba(0, 0, 0, 1);
->>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0
     }
     100% {
         transform: translate(-50%, -50%);
         text-shadow:  0 20px 0 black,
                       0 0px 20px rgba(0, 0, 0, .8);
     }
-<<<<<<< HEAD
 }
-=======
-  }
-
-
-
->>>>>>> 33a0b8c6f5f8a7cffe1d97313669d3372bc75ef0

@@ -21,7 +21,7 @@ const CharacterTrivia = () => {
 
     return (
         <div className="character-trivia-container">
-            <h2>Bob's Burgers Character Trivia</h2>
+            {/* <h2>Bob's Burgers Character Trivia</h2> */}
             {character && (
                 <div>
                     <img src={character.image} alt={character.name} style={{ borderRadius: "10px", maxWidth: "100%" }} />

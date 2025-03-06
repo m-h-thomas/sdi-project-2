@@ -34,7 +34,7 @@ function App() {
   }
 
   function InnerApp() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return (
       <>
 
