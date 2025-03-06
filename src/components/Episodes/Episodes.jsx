@@ -1,6 +1,6 @@
 // Episodes.jsx
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./Episodes.css";
 import FavoriteButton from "../Favorites/FavoriteButton";
 import Favorites from "../Favorites/Favorites"; // Import the Favorites component
@@ -8,6 +8,12 @@ import Favorites from "../Favorites/Favorites"; // Import the Favorites componen
 export default function Episodes() {
   const [episodeList, setEpisodeList] = useState([]);
   const [favorite, setFavorite] = useState([]);
+
+  const navigate = useNavigate()
+
+  const cardClick = (id) => {
+    navigate(`/episodes/${id}`);
+  };
 
   // Fetch episodes data
   useEffect(() => {
@@ -50,6 +56,8 @@ export default function Episodes() {
     });
   };
 
+
+
   return (
     <div>
       <div>
@@ -68,7 +76,7 @@ export default function Episodes() {
                     onToggleFavorite={handleToggleFavorite}
                     isFavorited={favorite.some(fav => fav.id === episode.id)} // Check if the episode is favorited
                   />
-                  <div><a href={episode.wikiUrl} target="_blank" rel="noopener noreferrer">Wiki</a></div>
+                  <div className="details-link" onClick={() => cardClick(episode.id)}>Details</div>
                 </li>
               ))}
             </ul>

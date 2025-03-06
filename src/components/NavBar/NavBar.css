@@ -15,7 +15,7 @@
 
  @font-face {
     font-family: "Bob's Burgers";
-    src: url('https://www.fontsaddict.com/fontface/bobs-burgers.ttf');
+    src: url('/bobs-burgers.ttf');
   }
 .nav-link {
     color: black;

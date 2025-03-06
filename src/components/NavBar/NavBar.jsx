@@ -16,8 +16,8 @@ export default function NavBar(){
                 <Link to="/characters" className="nav-link">
                     Characters
                 </Link>
-                
-                
+
+
 
             </div>
         </div>
