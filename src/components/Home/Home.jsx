@@ -8,12 +8,10 @@ export default function Home(){
         <div className="home-body">
             <div className="main-container">
                 <div className="main-text">
-                  <section className="latest-episode">
                     <h2>Latest Episode</h2>
-                    <DisplayEpisode />  
-                  </section>
                 </div>
-             </div>
+                <DisplayEpisode /> 
+            </div>
              <div className="chalkboard-container">
                 <BoDChalkboard />
              </div>

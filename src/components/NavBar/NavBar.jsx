@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./NavBar.css";
+import "/home/skinnyj/projects/sdi-project-2/src/components/SearchBar/SearchBar.jsx";
 
 export default function NavBar(){
     return(
@@ -15,6 +16,9 @@ export default function NavBar(){
                 <Link to="/characters" className="nav-link">
                     Characters
                 </Link>
+                
+                
+
             </div>
         </div>
     )
