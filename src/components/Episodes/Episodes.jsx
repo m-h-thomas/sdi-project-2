@@ -76,7 +76,7 @@ export default function Episodes() {
                     onToggleFavorite={handleToggleFavorite}
                     isFavorited={favorite.some(fav => fav.id === episode.id)} // Check if the episode is favorited
                   />
-                  <div onClick={() => cardClick(episode.id)}>Details</div>
+                  <div className="details-link" onClick={() => cardClick(episode.id)}>Details</div>
                 </li>
               ))}
             </ul>

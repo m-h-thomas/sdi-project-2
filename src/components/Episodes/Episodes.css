@@ -83,3 +83,7 @@ a {
   font-style: italic;
   font-weight: bold;
 }
+
+.details-link:hover {
+  cursor: pointer;
+}
