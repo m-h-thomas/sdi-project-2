@@ -22,7 +22,7 @@ function App() {
           <NavBar/>
         </div>
         <InnerApp />
-        <div>
+        <div className='footer'>
           <Favorites />
         </div>
       </div>
