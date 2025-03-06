@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./NavBar.css";
 
+
 export default function NavBar(){
     return(
         <div className="header">
@@ -15,8 +16,8 @@ export default function NavBar(){
                 <Link to="/characters" className="nav-link">
                     Characters
                 </Link>
-                
-                
+
+
 
             </div>
         </div>

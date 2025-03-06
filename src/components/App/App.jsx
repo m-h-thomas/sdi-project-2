@@ -6,6 +6,7 @@ import CharacterShots from '../Characters/Characters.jsx';
 import NavBar from '../NavBar/NavBar.jsx'
 import Favorites from '../Favorites/Favorites.jsx';
 import CharacterDetails from '../Characters/CharacterDetail.jsx';
+import EpisodeDetail from '../Episodes/EpisodeDetail'
 
 import "./App.css";
 
@@ -21,7 +22,7 @@ function App() {
           <NavBar/>
         </div>
         <InnerApp />
-        <div>
+        <div className='footer'>
           <Favorites />
         </div>
       </div>
@@ -32,10 +33,11 @@ function App() {
     const navigate = useNavigate();
     return (
       <>
-      
+
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
+            <Route path="/episodes/:id" element={<EpisodeDetail />} />
             <Route path="/characters" element={<CharacterShots/>} />
             <Route path="/characters/:id" element={<CharacterDetails />} />
         </Routes>

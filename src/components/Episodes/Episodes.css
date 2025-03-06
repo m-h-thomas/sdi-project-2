@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 
@@ -15,6 +16,7 @@ h1 {
   font-size: 64px;
   padding-top: 80px;
   text-align: center;
+  z-index: -5;
 }
 
 h2 {
@@ -22,6 +24,7 @@ h2 {
   font-size: 48px;
   padding-top: 80px;
   text-align: center;
+  z-index: -3;
 }
 
 body {
@@ -30,7 +33,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 80px
+  padding-top: 65px;
+  padding-bottom: 135px;
 }
 
 
@@ -56,6 +60,7 @@ body {
   transition: transform 0.3s ease;
   font-size: 22px;
   align-content: center;
+
 }
 
 .episode-list li:hover {
@@ -82,4 +87,8 @@ a {
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
+}
+
+.details-link:hover {
+  cursor: pointer;
 }
