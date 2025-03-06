@@ -68,16 +68,15 @@ export default function Episodes() {
             <h2>Season {season}</h2>
             <ul className="episode-list">
               {groupedBySeason[season].map((episode) => (
-                <li key={episode.id} onClick={() => cardClick(episode.id)}>
+                <li key={episode.id}>
                   Episode: {episode.episode}
                   <div>{episode.name}</div>
-
                   <FavoriteButton
                     episode={episode}
                     onToggleFavorite={handleToggleFavorite}
                     isFavorited={favorite.some(fav => fav.id === episode.id)} // Check if the episode is favorited
                   />
-                  <div><a href={episode.wikiUrl} target="_blank" rel="noopener noreferrer">Wiki</a></div>
+                  <div onClick={() => cardClick(episode.id)}>Details</div>
                 </li>
               ))}
             </ul>

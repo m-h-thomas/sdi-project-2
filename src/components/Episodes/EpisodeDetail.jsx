@@ -29,6 +29,7 @@ export default function EpisodeDetail () {
         <h2>Total Viewers</h2>
           <p>{episodeDetails.totalViewers}</p>
       </div>
+      <div><a href={episodeDetails.wikiUrl} target="_blank" rel="noopener noreferrer">Even More Details at the Wiki</a></div>
 
     </>
   )
