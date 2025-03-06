@@ -1,0 +1,80 @@
+/* Import DeCapoers Font */
+@font-face {
+    font-family: 'DeCapoers';
+    src: url('./fonts/DeCapoers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Blackboard background */
+.chalkboard {
+    background-color: #333;
+    padding: 10px;
+    border: 10px solid #a83b3b;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    max-width: 300px;
+    max-height: 400px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    font-family: 'DeCapoers', cursive;
+    position: fixed;
+    margin-top: -130px;
+    
+    /* Chalkboard texture background */
+    background-image: url('./images/chalkboard-texture.png');
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Chalk-like font with typing effect */
+.chalk-text {
+    font-family: 'DeCapoers', cursive;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Header text */
+.bod-header {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: -75px;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    text-decoration: underline;
+}
+
+/* Loading text style */
+.loading {
+    color: #fff;
+    font-style: italic;
+}
+
+/* Burger Icon Styles */
+.burger-icon {
+    cursor: pointer;
+    bottom: 10px; 
+    right: 10px; 
+    animation: fade-in 2s ease-in-out;
+    position: absolute;
+    transition: transform 0.3s;
+}
+.burger-icon:hover {
+    transform: scale(1.2);
+}
+/* Fade-in animation for burger icon */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
