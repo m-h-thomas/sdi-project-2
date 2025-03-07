@@ -44,6 +44,7 @@ function App() {
             <Route path="/episodes/:id" element={<EpisodeDetail />} />
             <Route path="/characters" element={<CharacterShots/>} />
             <Route path="/characters/:id" element={<CharacterDetails />} />
+      
         </Routes>
         {/* <button onClick={() => {navigate('/')}}>Home</button>
         <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}

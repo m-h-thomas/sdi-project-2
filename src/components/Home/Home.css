@@ -9,24 +9,14 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;  /* Updated to space-between for left and right alignment */
+    justify-content: space-between; 
     align-items: center;
-    gap: 20px;
-    padding: 20px;  /* Added padding from updated CSS */
-}
-
-/* Left side for CharacterTrivia and GIF grid */
-.left-side {
-    flex: 0.8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
+    padding: 75px;
 }
 
 /* Main container with original styles */
 .main-container {
-    width: 45%; 
+    width: 600px; 
     height: 400px; 
     margin-top: 150px;
     background-image: url('./src/assets/family.png');
@@ -35,9 +25,7 @@
     justify-content: center;
     align-content: center;
     border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-color: black;
-    border-style: solid;
-    border-width: 4px;
+    border: 4px solid black;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
@@ -45,7 +33,6 @@
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     color: #F3EE10;
     position: relative;
-    flex: 2;  /* Added to balance the layout */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,31 +57,24 @@
     justify-content: center;
     margin-top: 20px;
 }
-
-/* GIF grid and style */
-.gif-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.trivia-container {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.gif-style {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+
 
 /* Original bounce animation */
 @keyframes bounce {
     0% {
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -50%);
         text-shadow:
             0 2px 0 #FE041B,
             0 2px 3px rgba(0, 0, 0, 1);  
     }
     100% {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -60%);
         text-shadow:  0 20px 0 black,
                       0 0px 20px rgba(0, 0, 0, .8);
     }
