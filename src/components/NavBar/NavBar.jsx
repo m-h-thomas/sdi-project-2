@@ -17,6 +17,13 @@ export default function NavBar(){
                     Characters
                 </Link>
             </div>
+            <div className="umbrella-icon">
+                <Link to="/chill">
+                    ☔
+                </Link>
+
+                </div>
+
         </div>
     )
 }

@@ -7,6 +7,7 @@ import NavBar from '../NavBar/NavBar.jsx'
 import Favorites from '../Favorites/Favorites.jsx';
 import CharacterDetails from '../Characters/CharacterDetail.jsx';
 import EpisodeDetail from '../Episodes/EpisodeDetail'
+import LofiBobs from '../Chill/LofiBobs.jsx'
 import "../Favorites/Favorites.css"
 import "./App.css";
 
@@ -44,6 +45,8 @@ function App() {
             <Route path="/episodes/:id" element={<EpisodeDetail />} />
             <Route path="/characters" element={<CharacterShots/>} />
             <Route path="/characters/:id" element={<CharacterDetails />} />
+            <Route path="/chill" element={<LofiBobs />} />
+      
         </Routes>
         {/* <button onClick={() => {navigate('/')}}>Home</button>
         <button onClick={() => {navigate('/episodes')}}>Episodes</button> */}
