@@ -30,7 +30,7 @@ This app only runs locally and requires the user to fork and clone down the repo
 
 
 ## Trust The Process
-[Kanban Board](https://kanbanflow.com/board/m22cZi7)
+[Kanban Board](https://kanbanflow.com/board/m22cZi7) <br />
 [Figma](https://www.figma.com/board/sSaKoJa9Sesm4HdZ5erFQq/Project-2-Galvanized?node-id=0-1&p=f&t=51asA7jT8kfLAe6B-0)
 
 
