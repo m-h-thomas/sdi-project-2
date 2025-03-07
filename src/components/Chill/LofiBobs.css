@@ -10,12 +10,12 @@
     } */
 
     .full-screen-container {
-      position: fixed; /* Make it take over the full screen */
+      position: fixed; 
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 9999; /* Ensure it's displayed on top */
+      z-index: 9999; 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,22 +26,24 @@
     }
     
     .umbrella{
-      margin-top: -200px;
-      margin-left: 125px;
+      margin-top: 350px;
+      margin-left: -150px;
     }
     
     .logo {
         text-align: center;
-        width: 525px;
-        height: 75px;
+        width: 550px;
+        height: 100px;
+        padding: 5px;
         margin: auto;   
         left: 0;
         right: 0;
-        margin-top: 380px;
+        margin-top: 60px;
         user-select: none;
         background-color: rgb(251, 255, 3, 0.3);
         border: 12px ridge rgb(224, 26, 26);
         border-radius: 2px;
+        position: absolute;
     
         box-shadow: 0 0 .2rem #fff,
         0 0 .2rem rgb(238, 59, 59),

@@ -5,6 +5,7 @@ This app is intended to serve as a one-stop shop for fans of the show Bob's Burg
 - Curate a list of favorite episodes
 - Search for details on specific characters
 - Display a random Burger of the Day 🍔
+- Display random character trivia
 - Display latest episode information
 - View Pest Control truck jokes
 - View Store-Next-Door jokes
