@@ -9,20 +9,10 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;  /* Updated to space-between for left and right alignment */
+    justify-content: space-evenly; 
     align-items: center;
-    gap: 20px;
-    padding: 20px;  /* Added padding from updated CSS */
 }
 
-/* Left side for CharacterTrivia and GIF grid */
-.left-side {
-    flex: 0.8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-}
 
 /* Main container with original styles */
 .main-container {
@@ -45,7 +35,6 @@
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     color: #F3EE10;
     position: relative;
-    flex: 2;  /* Added to balance the layout */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,19 +60,6 @@
     margin-top: 20px;
 }
 
-/* GIF grid and style */
-.gif-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.gif-style {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
 
 /* Original bounce animation */
 @keyframes bounce {
