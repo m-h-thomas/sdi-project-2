@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div className ="home-body" data-testid='home-body'>
             {/* Left side: CharacterTrivia and GIF grid */}
-            <div className="left-side">
+            <div className="left-side" data-testid='character-trivia'>
                 <CharacterTrivia />
             </div>
 
