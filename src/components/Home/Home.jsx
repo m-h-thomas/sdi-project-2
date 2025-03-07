@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div className="home-body">
             {/* Left side: CharacterTrivia and GIF grid */}
-            <div className="left-side">
+            <div className="trivia-container">
                 <CharacterTrivia />
             </div>
 

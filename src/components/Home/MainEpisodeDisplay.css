@@ -2,8 +2,9 @@
 .images {
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    margin-top: 20px;
+    align-items:baseline;
+    margin-top: 15px;
+    padding: 20px;
 }
 .episode-container {
     position: absolute;
@@ -33,20 +34,19 @@
 
 .episode-section-pest,
 .episode-section-store {
-    max-width: 200px; /* equal space between images and labels */
+    max-width: 200px; 
     color: #FE041B;
     text-decoration: underline;
-    font-size: larger;
-    padding-top: 0%;
+    font-size: 1.5em;
     font-family: 'Bob\'s Burgers';
 
 }
 
 .episode-section-pest img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 100px;
     display: block;
-    margin: 10px auto 0; /* center image below text */
+    margin: 10px auto 0; 
 }
 .episode-section-pest img:hover {
     transform: scale(1.2);
@@ -55,10 +55,10 @@
 }
 
 .episode-section-store img {
-    width: 130px; /* makes images smaller */
-    height: auto;
+    width: 150px; 
+    height: 100px;
     display: block;
-    margin: 10px auto 0; /* centers image below name */
+    margin: 10px auto 0; 
 }
 
 @keyframes drivingOff {

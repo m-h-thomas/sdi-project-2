@@ -14,14 +14,11 @@
     border-radius: 10px;
     color: #fff;
     text-align: center;
-    max-width: 300px;
-    max-height: 400px;
     width: 300px;
     height: 400px;
-    margin: auto;
     font-family: 'DeCapoers', cursive;
-    position: fixed;
-    margin-top: -130px;
+    margin-top: 130px;
+    position: relative;
     
     /* Chalkboard texture background */
     background-image: url('./images/chalkboard-texture.png');

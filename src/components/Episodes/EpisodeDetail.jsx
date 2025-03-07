@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import '../Home/Home.css'
-import '../Home/MainEpisodeDisplay.css'
+import './EpisodeDetail.css'
+
 
 const baseURL = "https://bobsburgers-api.herokuapp.com";
 
@@ -40,17 +40,16 @@ export default function EpisodeDetail () {
 
   return (
     <>
-      <div className="home-body">
-            <div className="main-container">
+      <div className="detail-body">
+            <div className="detail-container">
 
-                <div className="episode-container">
-                  <div className="episode-text" onClick={() => window.open(episodeDetails.wikiUrl)}>
+                <div className="episode-detail-container">
+                  <div className="episode-detail-text" onClick={() => window.open(episodeDetails.wikiUrl)}>
                     {setEpisodeDetails && (
-                      <div className="episode-box">
+                      <div className="episode-detail-box">
                         <p>
                           <strong>{episodeDetails.name}</strong>
                         </p>
-                        <br></br>
                         <p>
                           {episodeDetails.description}
                         </p>
@@ -65,7 +64,7 @@ export default function EpisodeDetail () {
                     )}
 
                     {burgerOfTheDay && (
-                      <div className="episode-section-burger">
+                      <div className="episode-detail-section-burger">
                         <p>
                           <strong>🍔 Burger of The Day:</strong> {burgerOfTheDay.name}
                         </p>
@@ -73,9 +72,9 @@ export default function EpisodeDetail () {
                     )}
                   </div>
 
-                  <div className="images">
+                  <div className="detail-images">
                     {pestControl && (
-                      <div className="episode-section-pest">
+                      <div className="episode-detail-section-pest">
                         <p>
                           <strong>Pest Control:</strong>
                         </p>
@@ -86,7 +85,7 @@ export default function EpisodeDetail () {
                     )}
 
                     {storeNextDoor && (
-                      <div className="episode-section-store">
+                      <div className="episode-detail-section-store">
                         <p>
                           <strong>Store Next Door:</strong>
                         </p>
