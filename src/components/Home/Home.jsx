@@ -8,9 +8,11 @@ import Favorites from '../Favorites/Favorites.jsx'
 
 export default function Home() {
     return (
-        <div className="home-body">
+        <div className ="home-body" data-testid='home-body'>
             {/* Left side: CharacterTrivia and GIF grid */}
-            <div className="trivia-container">
+
+            <div className="trivia-container"data-testid='character-trivia'>
+
                 <CharacterTrivia />
             </div>
 
