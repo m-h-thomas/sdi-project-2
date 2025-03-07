@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import './LofiBobs.css';  
+import './LofiBobs.css'; 
+import './umbrella.png';
+import Lofi from '../../sounds/BobsBurgersLofi.mp3';
 
 const LofiBobs = () => {
   const rainContainerRef = useRef(null);
@@ -27,9 +29,11 @@ const LofiBobs = () => {
         <b className="burgers"><span>&nbsp; B</span>URGERS</b>
       </div>
       <section className="rain" ref={rainContainerRef}></section>
-      <img className="umbrella" src="images/umbrella.png" alt="Umbrella" />
-      <audio loop autoPlay>
-        <source src="/Chill/sounds/BobsBurgersLofi.mp3" type="audio/mpeg" />
+      
+      <img className="umbrella" src="/umbrella.png" alt="Umbrella" />
+
+      <audio>
+        <audio src={Lofi} />
       </audio>
     </div>
   );
